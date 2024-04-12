@@ -37,5 +37,5 @@ jobs:
         docker push ${{ steps.login-ecr.outputs.registry }}/${{ secrets.REPO_NAME }}:$IMAGE_TAG
         echo "::set-output name=image::${{ steps.login-ecr.outputs.registry }}/${{ secrets.REPO_NAME }}:$IMAGE_TAG"
       env:
-        AWS_DEFAULT_REGION: ap-northeast-2
-        AWS_REGION: ap-northeast-2
+        AWS_DEFAULT_REGION: us-east-1
+        AWS_REGION: us-east-1
